@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "c8e7aa5d-a539-4cf8-97c6-3550cc62469a",
+		"name": "ICT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7836248"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/cards/12345",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/cards/12345",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cards",
+						"12345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/state",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/state",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"state"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
