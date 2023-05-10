@@ -6,7 +6,7 @@ class CardsService {
   async getCardInfo(cardNumber: string) {
     const [validity, state] = await Promise.all([
       axios.get(
-        `http://private-264465-litackaapi.apiary-mock.com/cards/${cardNumber}/validity`
+        `http://private-264465-litackaapi.apiary-mock.com/cards/${cardNumber}/validity` // [CR] base url by mela byt v konfiguraci
       ),
       axios.get(
         `http://private-264465-litackaapi.apiary-mock.com/cards/${cardNumber}/state`

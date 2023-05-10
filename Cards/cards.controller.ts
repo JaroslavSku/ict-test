@@ -12,7 +12,7 @@ class CardsController {
         status,
       });
     } catch (e: any) {
-      res.status(500).json({ error: e.message });
+      res.status(500).json({ error: e.message }); // [CR] status mi to vratilo 500, ale v message je 404, to je trochu matouci
     }
   }
 }
